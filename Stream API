@@ -1,0 +1,13 @@
+import java.util.*;
+import java.util.stream.*;
+
+public class StreamAPI {
+    public static void main(String[] args) {
+        List<Integer> l1  = Arrays.asList(10,20,30,40,50);
+        Stream<Integer> streamData = l1.stream();
+
+        System.out.println(streamData.count());
+        streamData.forEach(n-> System.out.println(n));
+       // streamData.forEach(n-> System.out.println(n));
+    }
+}

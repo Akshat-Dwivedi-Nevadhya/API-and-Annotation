@@ -1,0 +1,22 @@
+import java.util.Date;
+import java.time.*;
+
+
+public class DateAndTimeAPI {
+    public static void main(String[] args) {
+        /*Date dt = new Date();
+        System.out.println(dt);
+       long timeInMS =  dt.getTime();
+        java.sql.Date dt2 = new java.sql.Date(timeInMS);
+        System.out.println(dt2);*/
+
+        System.out.println(LocalDate.now());
+        System.out.println(LocalTime.now());
+
+        System.out.println(LocalDate.now().getDayOfMonth());
+        System.out.println(LocalDate.now().getMonthValue());
+        System.out.println(LocalDate.now().getMonth());
+        System.out.println(LocalDate.now().getEra());
+
+    }
+}
